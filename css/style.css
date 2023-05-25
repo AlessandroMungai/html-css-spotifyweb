@@ -13,3 +13,77 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
+/*****MAIN*****/
+
+main{
+    height: 90vh;
+    background-color: var(--main-color);
+}
+
+.main-row{
+    display: flex;
+}
+
+.col-container{
+    height: 90vh;
+    background-color: black;
+    width: 10vw;
+}
+
+header{
+    height: 10vh;
+    background-color: var(--header-color);
+    width: 90vw;
+}
+
+.toolbar li,a{
+    color: white;
+    display:inline-block;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 0.7rem;
+}
+
+.toolbar{
+    text-align: center;
+}
+
+/*****FOOTER*****/
+
+footer{
+    height: 10vh;
+    background-color: var(--footer-color);
+}
+
+/*****RESPONSIVE*****/
+
+
+
+/*****DEBUG*****/
+
+/* .debug main{
+    height: 90vh;
+    background-color: var(--main-color);
+} */
+
+/* .main-row{
+    display: flex;
+} */
+
+/* .debug footer{
+    height: 10vh;
+    background-color: var(--footer-color);
+} */
+
+/* .debug .col-container{
+    height: 90vh;
+    background-color: black;
+    width: 15%;
+} */
+
+/* .debug .header-container{
+    height: 10vh;
+    background-color: var(--header-color);
+    width: 85%;
+} */
