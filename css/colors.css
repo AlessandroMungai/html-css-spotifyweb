@@ -1,0 +1,25 @@
+/*****COLOR*****/
+
+:root{
+    --main-color:#141922;
+    --footer-color:#282828;
+    --header-color:#080B12;
+    --column-color:#000000;
+}
+
+.main-color-bg{
+    background-color: var(--main-color);
+}
+
+.footer-color-bg{
+    background-color: var(--footer-color);
+}
+
+.header-color-bg{
+    background-color: var(--header-color);
+}
+
+.column-color-bg{
+    background-color: var(--column-color);
+}
+
