@@ -22,6 +22,16 @@ main{
     display: flex;
 }
 
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7rem;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: .0625rem solid white;
+    border-radius: 3.125rem;
+}
 
 .main-container{
     height: 100%;
@@ -68,10 +78,10 @@ li{
     text-decoration: none;
 }
 
-.music-list h3{
+h3{
     color:white;
     margin-top: .625rem;
-    padding: 1.25rem 0;
+    margin-bottom: 1.25rem;
 }
 
 .row-card{
@@ -79,15 +89,57 @@ li{
     margin: 0 -0.625rem;
 }
 
-.music-list{
+.recent-played, .made-for, .most-popular{
     padding: 1.25rem .625rem;
 }
 
-.music-list .row-card .col-card{
+.row-card .col-card{
     width: calc(100% / 6 - 1.25rem);
     margin: 0 .625rem;
 }
 
+.row-card img{
+    width: 100%;
+}
+
+.made-for > p{
+    color:rgb(159, 158, 158);
+    font-size: 0.7rem;
+    margin-bottom: 1.25rem;
+}
+
+.most-popular h3{
+    margin-bottom: .625rem;
+}
+
+.most-popular > p{
+    color:rgb(159, 158, 158);
+    font-size: 0.7rem;
+    margin-bottom: 1.25rem;
+}
+
+.made-for h3{
+    margin-bottom: .625rem;
+}
+
+.card-container{
+    text-align: center;
+}
+
+.card-container h5{
+    color: white;
+    margin-bottom: .3125rem;
+    margin-top: .3125rem;
+}
+
+.card-container p{
+    color: lightgray;
+    font-size: 0.7rem;
+}
+
+.img-circle{
+    border-radius: 50%;
+}
 
 /*****FOOTER*****/
 
@@ -108,10 +160,23 @@ footer{
 
 @media screen and (max-width: 700px){
 
+    .row-card .col-card{
+        width: calc(100% / 4 - 1.25rem);
+        margin-top: .625rem;
+    }
+
+    .row-card{
+        flex-wrap: wrap;
+    }
+
 }
 
 @media screen and (max-width: 600px){
     
+    .row-card .col-card{
+        width: calc(100% / 2 - 1.25rem);
+    }
+
 }
 
 
@@ -152,9 +217,10 @@ footer{
     width: calc(100% - 12.5rem);
 } */
 
-.debug .col-card{
+/* .debug .col-card{
     background-color: aqua;
-}
+    width: 12.5rem;
+} */
 
 .debug aside{
     color: white;
