@@ -17,7 +17,7 @@ body{
 /*****MAIN*****/
 
 main{
-    height: calc(100vh - 6.25rem);
+    height: calc(100vh - 5rem);
     background-color: var(--main-color);
     display: flex;
 }
@@ -133,7 +133,7 @@ h3{
 }
 
 .card-container p{
-    color: lightgray;
+    color: rgb(159, 158, 158);
     font-size: 0.7rem;
 }
 
@@ -144,12 +144,87 @@ h3{
 /*****FOOTER*****/
 
 footer{
-    height: 6.25rem;
+    height: 5rem;
     background-color: var(--footer-color);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: white;
-    padding: 50px;
+}
+
+.foot-left{
+    display: flex;
+    align-items: center;
+}
+
+.plaiyng-song img{
+    width: 70px;
+    padding-left: 1.25rem;
+    display: inline-block;
+}
+
+.plaiyng-song{
+    display: flex;
+    align-items: center;
+}
+
+.info-song p{
+    font-size: 0.6rem;
+    color: rgb(159, 158, 158);
+}
+
+.info-song{
+    padding-left: .5rem;
+    padding-right: 1.875rem;
+}
+
+.icon-foot-left >*{
+    display: inline-block;
+}
+
+.icon-foot-left button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 .3125rem;
+}
+
+.foot-center{
+    text-align: center;
+}
+
+.music-button i{
+    color: rgb(239, 238, 238);
+    font-size: 1.4rem;
+    
+}
+
+.music-button > *{
+    padding-right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+   }
+
+.time-line{
+    background-color: rgb(121, 120, 120);
+    width: 350px;
+    height: 3px;
+    border-radius: .9375rem;
+}
+
+.listened-music{
+    width: 2.1875rem;
+    background-color: rgb(239, 238, 238);
+    width: 50px;
+    height: 3px;
+    border-radius: .9375rem;
+}
+
+.listened-music::before{
+    content: " ";
+    
 }
 
 /*****RESPONSIVE*****/
