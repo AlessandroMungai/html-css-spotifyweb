@@ -25,6 +25,12 @@ aside{
     min-height: 400px;
     background-color: black;
     width: 12.5rem;
+    color: white;
+    padding: 1.25rem;
+}
+
+.resta{
+    display:none
 }
 
 .playlist{
@@ -301,9 +307,9 @@ footer{
 }
 
 .plaiyng-song img{
-    width: 70px;
-    padding-left: 1.25rem;
+    width: 40px;
     display: inline-block;
+    margin-left: .625rem;
 }
 
 .plaiyng-song{
@@ -318,7 +324,7 @@ footer{
 
 .info-song{
     padding-left: .5rem;
-    padding-right: 1.875rem;
+    padding-right: 0.9rem;
 }
 
 .icon-foot-left >*{
@@ -332,14 +338,27 @@ footer{
     padding: 0 .3125rem;
 }
 
+.icon-foot-left button i{
+    font-size: 0.7rem;
+}
+
 .foot-center{
     text-align: center;
 }
 
 .music-button i{
     color: rgb(239, 238, 238);
-    font-size: 1.4rem;
-    
+    font-size: 1rem;   
+}
+
+.row-timeline{
+    display: flex;
+    align-items: center;
+}
+
+.time-track{
+    font-size: 0.6rem;
+    margin-right: .625rem;
 }
 
 .music-button > *{
@@ -347,14 +366,15 @@ footer{
     background: none;
     border: none;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
    }
 
 .time-line{
     background-color: rgb(121, 120, 120);
-    width: 350px;
+    width: 200px;
     height: 3px;
     border-radius: .9375rem;
+    margin-right: .625rem;
 }
 
 .listened-music{
@@ -363,6 +383,22 @@ footer{
     width: 50px;
     height: 3px;
     border-radius: .9375rem;
+    position: relative;
+  
+}
+
+.listened-music:hover{
+    background-color: greenyellow
+}
+
+.listened-music:hover .circle-listened-music{
+    height: .625rem;
+    width: .625rem;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: -4px;
 }
 
 .foot-right{
@@ -372,7 +408,7 @@ footer{
 }
 
 .foot-right button{
-    padding-right: 20px;
+    padding-right: 12px;
     background: none;
     border: none;
     cursor: pointer;
@@ -380,7 +416,7 @@ footer{
 
 .time-line-volume{
     background-color: rgb(121, 120, 120);
-    width: 100px;
+    width: 80px;
     height: 3px;
     border-radius: .9375rem;
 }
@@ -394,7 +430,8 @@ footer{
 }
 
 .foot-right i{
-    color: rgb(159, 158, 158);    
+    color: rgb(159, 158, 158); 
+    font-size: 0.7rem;  
 }
 
 
@@ -424,6 +461,22 @@ footer{
         width: calc(100% / 2 - 1.25rem);
     }
 
+    section{
+    width: calc(100% - 80px);
+    }
+
+    header{
+    width: calc(100% - 80px);
+    }
+
+    .logo-container, .icon-aside,
+    .playlist, .footer-aside{
+        display: none;
+    }
+
+    .resta{
+        display: block;
+    }
 }
 
 
@@ -469,7 +522,7 @@ footer{
     width: 12.5rem;
 } */
 
-.debug aside{
+/* .debug aside{
     color: white;
     padding: 1.25rem;
-}
+} */
